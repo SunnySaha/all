@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#92C5E4"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#E4E9ED"
+
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            android:layout_margin="15dp"
+            android:id="@+id/idInputLayout"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Versity Id"
+                android:inputType="number"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            android:id="@+id/emailInputLayout"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:passwordToggleEnabled="true"
+            android:id="@+id/passInputLayout"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            android:text="@string/outlined_button_label_enabled"
+            app:icon="@drawable/ic_adb_black_24dp"
+            />
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/remembermechk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Material.Drawable.CheckBox"
+            android:text="Remember me"
+            android:layout_gravity="left"
+            android:textColor="@color/colorPrimaryDark"
+            app:cbd_strokeColor="@color/colorPrimaryDark"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+
+            />
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/forgetPassButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:layout_gravity="right"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            android:text="@string/text_button_label_enabled"/>
+    </LinearLayout>
+
+
+</LinearLayout>
